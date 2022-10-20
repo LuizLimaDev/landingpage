@@ -1,0 +1,321 @@
+:root {
+    --cor-texto-primaria: #101828;
+    --cor-texto-secundaria: #667085;
+    --cor-vermelha: #8E2424;
+    --cor-texto-branco: #FFFFFF;
+    --fonte-principal: 'Inter', sans-serif;
+    --borda-caixa: #EAECF0;
+    --fundo-colorido:  rgba(195, 25, 25, 0.03);
+    --fundo-rodape: #F9FAFB;    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 7rem;
+    color: var(--cor-texto-secundaria);
+}
+
+.paginas {
+    margin-right: 20rem;
+}
+
+a:link {
+    color: var(--cor-texto-secundaria);
+}
+
+a {
+    margin: 0 2rem;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.botoes_Cadastrar {
+    background-color: var(--cor-vermelha);
+    padding: 10px 13px;
+    border-radius: 5px;
+}
+
+.botoes_Cadastrar:link {
+    color: var(--cor-texto-branco);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+}
+
+.cabecalho__sobreNos {
+    color: var(--cor-vermelha);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-texto-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 48px;
+    margin: 1.5rem;
+}
+
+.cabecalho__texto {
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.metricas-container {
+    display: grid;
+    grid-template-areas:
+        "box box box box";
+    grid-column: 25% 25% 25% 25%;
+    padding: 1rem 6rem;
+}
+
+.metricas__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 280px;
+}
+
+.metricas__titulo {
+    color: var(--cor-vermelha);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.metricas__subtitulo {
+    color: var(--cor-texto-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 18px;
+    margin: .7rem 0;
+}
+
+.metricas__texto {
+    color: var(--cor-texto-secundaria);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.talentos-container {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talentos__vagasAbertas {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor-vermelha);
+    background-color: var(--fundo-colorido);
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+.talentos__subtitulo {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 36px;
+    margin: 1rem;
+}
+
+.talentos__descricao {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-texto-secundaria);
+}
+
+.talentos__imagem {
+    margin-top: 4rem;
+}
+
+.vagas__desenvolvimento,
+.vagas__desing {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.vagas__desenvolvimento {
+    margin-top: 5rem;
+}
+
+.vagas__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--cor-texto-primaria);
+}
+
+.vagas__profissao {
+    border: 2px solid var(--borda-caixa);
+    border-radius: 10px;
+    margin: 2rem 1.5rem 2rem 0;
+    padding: 1rem;
+}
+
+.vagas__cargo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--cor-texto-primaria);
+}
+
+.vagas__informacoes {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.vagas__periodo {
+    margin-right: 1.5rem;
+}
+
+.vagas__periodo, 
+.vagas__salario {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-texto-secundaria);
+}
+
+.colaboradores__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fundo-colorido);
+    padding: 3rem;
+    margin: 5rem 21rem;
+    border-radius: 10px;
+}
+
+.colaboradores__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor-vermelha);
+}
+
+.colaboradores__depoimento {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--cor-texto-primaria);
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.colaboradores__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-top: 1rem;
+}
+
+
+.colaboradores__nome {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-texto-primaria);
+    margin: 1rem 0 .3rem;
+}
+
+.colaboradores__cargo {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--cor-texto-secundaria);
+}
+
+.rodape-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fundo-rodape);
+    padding: 5rem;
+}
+
+.rodape__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--cor-texto-primaria);
+}
+
+.rodape__descricao {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-texto-secundaria);
+    margin: 1rem;
+}
+
+.rodape__email-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.rodape__email-input {
+    padding: .5rem;
+    padding-right: 6rem;
+    margin-left: 1.5rem;
+    border: 1px solid var(--cor-texto-secundaria);
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cor-texto-secundaria);
+}
+
+.rodape__email-cadastrar {
+    background-color: var(--cor-vermelha);
+    padding: .7rem;
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-texto-branco);
+}
+
+.rodape__email-container a:link {
+    text-decoration: none;
+    color: var(--cor-texto-branco);
+}
+
+.rodape__copyright {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cor-texto-secundaria);
+}
